@@ -20,7 +20,7 @@ jobs:
       - name: Build, unit tests and integration tests
         run: |
           chmod +x mvnw
-          ./mvnw build
+          ./mvnw package
       - name: Code vulnerability scanning
         uses: anchore/scan-action@v3
         id: scan
